@@ -1,0 +1,88 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <meta name="theme-color" content="#11120f">
+  <meta name="description" content="DREESHFILMEDIT is an independent moving-image studio creating cinematic videography and nature photography in Shelby, North Carolina.">
+  <title>DREESHFILMEDIT — Independent Moving Image Studio</title>
+  <style>
+    :root{--ink:#11120f;--cream:#f5f0df;--butter:#e8d879;--matcha:#9aa77a;--muted:#b7b5a9}
+    *{box-sizing:border-box}
+    html{scroll-behavior:smooth}
+    body{margin:0;background:var(--ink);color:var(--cream);font-family:Arial,Helvetica,sans-serif}
+    a{color:inherit}
+    .wrap{width:min(1160px,calc(100% - 40px));margin:auto}
+    header{display:flex;align-items:center;justify-content:space-between;padding:26px 0;border-bottom:1px solid #ffffff22}
+    .wordmark{font-size:clamp(1rem,2.5vw,1.35rem);font-weight:900;letter-spacing:.07em}
+    .wordmark span{color:var(--butter)}
+    nav{display:flex;gap:22px;font-size:.78rem;letter-spacing:.08em;text-transform:uppercase}
+    nav a{text-decoration:none;color:var(--muted)}
+    nav a:hover{color:var(--butter)}
+    .hero{display:grid;grid-template-columns:1.05fr .95fr;gap:6vw;align-items:center;padding:clamp(60px,10vw,130px) 0 90px}
+    .eyebrow{color:var(--matcha);font-size:.75rem;text-transform:uppercase;letter-spacing:.2em}
+    h1{font-size:clamp(3.2rem,8vw,7.6rem);line-height:.88;letter-spacing:-.075em;margin:22px 0 26px;font-weight:900}
+    h1 em{font-style:normal;color:var(--butter)}
+    .intro{font-size:clamp(1rem,1.5vw,1.2rem);line-height:1.7;color:#d1cfc3;max-width:520px}
+    .actions{display:flex;flex-wrap:wrap;gap:12px;margin-top:30px}
+    .button{display:inline-block;padding:14px 19px;text-decoration:none;font-size:.8rem;text-transform:uppercase;letter-spacing:.09em;border:1px solid var(--matcha)}
+    .button.primary{background:var(--butter);color:var(--ink);border-color:var(--butter);font-weight:700}
+    .portrait{position:relative;min-height:480px;background:#24271e;border:1px solid #ffffff24;overflow:hidden}
+    .portrait img{position:absolute;inset:0;width:100%;height:100%;object-fit:cover;object-position:center 30%;filter:saturate(.86)}
+    .portrait .caption{position:absolute;left:18px;bottom:18px;background:#11120fe8;padding:10px 13px;color:var(--butter);font-size:.72rem;letter-spacing:.12em;text-transform:uppercase}
+    .portrait:after{content:"";position:absolute;inset:0;pointer-events:none;background:linear-gradient(180deg,transparent 60%,#11120f66)}
+    .section{padding:65px 0;border-top:1px solid #ffffff22}
+    .section h2{font-size:clamp(2rem,5vw,4rem);letter-spacing:-.055em;margin:12px 0 20px}
+    .services{display:grid;grid-template-columns:repeat(3,1fr);gap:14px;margin-top:30px}
+    .service{padding:24px;border:1px solid #ffffff24;min-height:170px}
+    .service small{color:var(--matcha);letter-spacing:.12em}
+    .service h3{font-size:1.2rem;margin:22px 0 8px}
+    .service p{color:var(--muted);line-height:1.6;font-size:.92rem}
+    .contact{display:flex;justify-content:space-between;gap:24px;align-items:center;flex-wrap:wrap}
+    footer{padding:25px 0 35px;color:var(--muted);font-size:.78rem;display:flex;justify-content:space-between;gap:12px;flex-wrap:wrap}
+    @media(max-width:760px){nav{gap:12px;font-size:.68rem}.hero{grid-template-columns:1fr;padding-top:65px}.portrait{min-height:430px}.services{grid-template-columns:1fr}.service{min-height:unset}}
+    @media(max-width:430px){header{align-items:flex-start;gap:16px;flex-direction:column}nav{flex-wrap:wrap}.portrait{min-height:360px}}
+  </style>
+</head>
+<body>
+  <div class="wrap">
+    <header>
+      <a class="wordmark" href="#" aria-label="DREESHFILMEDIT home" style="text-decoration:none">DREESH<span>FILM</span>EDIT</a>
+      <nav aria-label="Main navigation"><a href="#work">Approach</a><a href="#services">Services</a><a href="#contact">Bookings</a></nav>
+    </header>
+    <main>
+      <section class="hero">
+        <div>
+          <div class="eyebrow">Independent moving-image studio · Shelby, NC</div>
+          <h1>Real life.<br><em>Film feeling.</em></h1>
+          <p class="intro">Cinematic videography and nature photography for people, places, and stories worth looking at twice. Intimate details, lived-in moments, and a little atmosphere.</p>
+          <div class="actions"><a class="button primary" href="#contact">Start a project ↗</a><a class="button" href="#work">Explore the studio</a></div>
+        </div>
+        <div class="portrait">
+          <img src="assets/IMG_1561.jpg" alt="Drecia, creator of DREESHFILMEDIT" onerror="this.style.display='none';this.parentElement.style.background='radial-gradient(ellipse at 50% 25%, #9aa77a 0%, #4a5140 25%, #24271e 70%)'">
+          <div class="caption">Behind the lens · Drecia</div>
+        </div>
+      </section>
+      <section class="section" id="work">
+        <div class="eyebrow">The point of view</div>
+        <h2>Not just content.<br><span style="color:var(--matcha)">A feeling you can keep.</span></h2>
+        <p class="intro">A thoughtful, independent approach to short-form films and photographs. Natural light, honest details, and edits with rhythm and intention.</p>
+      </section>
+      <section class="section" id="services">
+        <div class="eyebrow">Ways to work together</div>
+        <h2>Small moments. Strong stories.</h2>
+        <div class="services">
+          <article class="service"><small>01 / FILM</small><h3>Cinematic video</h3><p>Short films, highlight edits, personal stories, and atmosphere-rich reels.</p></article>
+          <article class="service"><small>02 / PHOTO</small><h3>Photography</h3><p>Portraits, nature, details, and images with a documentary point of view.</p></article>
+          <article class="service"><small>03 / EDIT</small><h3>Video editing</h3><p>Shape existing footage into a focused, polished story made to be watched.</p></article>
+        </div>
+      </section>
+      <section class="section contact" id="contact">
+        <div><div class="eyebrow">Now booking select projects</div><h2>Have a story?</h2><p class="intro">Tell me what you're imagining and what you already have.</p></div>
+        <a class="button primary" href="mailto:hello@dreeshfilmedit.com?subject=Project%20inquiry">Discuss a project ↗</a>
+      </section>
+    </main>
+    <footer><span>© <span id="year">2026</span> DREESHFILMEDIT</span><span>Made with intention in Shelby, North Carolina.</span></footer>
+  </div>
+</body>
+</html>
