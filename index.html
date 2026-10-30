@@ -10,7 +10,7 @@
     :root{--ink:#11120f;--cream:#f5f0df;--butter:#e8d879;--matcha:#9aa77a;--muted:#b7b5a9}
     *{box-sizing:border-box}
     html{scroll-behavior:smooth}
-    body{margin:0;background:var(--ink);color:var(--cream);font-family:Arial,Helvetica,sans-serif}
+    body{margin:0;background:var(--ink);color:var(--cream);font-family:"Coolvetica Cram",Arial,sans-serif}
     a{color:inherit}
     .wrap{width:min(1160px,calc(100% - 40px));margin:auto}
     header{display:flex;align-items:center;justify-content:space-between;padding:26px 0;border-bottom:1px solid #ffffff22}
@@ -83,6 +83,16 @@
       </section>
     </main>
     <footer><span>© <span id="year">2026</span> DREESHFILMEDIT</span><span>Made with intention in Shelby, North Carolina.</span></footer>
+  <script>
+    fetch('assets/coolvetica-cram-base64.txt')
+      .then(response => response.text())
+      .then(encoded => {
+        const font = new FontFace('Coolvetica Cram', 'url(data:font/otf;base64,' + encoded.trim() + ')');
+        return font.load();
+      })
+      .then(font => document.fonts.add(font))
+      .catch(error => console.warn('Coolvetica Cram could not be loaded:', error));
+  </script>
   </div>
 </body>
 </html>
